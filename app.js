@@ -4,7 +4,7 @@ const app = express();
 app.get("/", (req, res) => {
   let template = "";
   for (let i = 1; i <= 50; i++) {
-    template += `<p>${i} Soy ${i % 2 === 0 ? "Par" : "Impar"}<p>`;
+    template += `<p>${i} Soy ${i % 2 === 0 ? "Par" : "Impar"}</p>`;
   }
   res.status(200).send(template);
 });
